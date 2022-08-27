@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.card-link{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+    padding: 15px;
+}
+ul li:hover{
+    background-color: white;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li a:hover{
+    color:black;
+}
