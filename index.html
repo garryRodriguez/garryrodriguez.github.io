@@ -4,42 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="assets/css/mystyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        .upwork{
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     
-    <div class="container-fluid mt-5">
-        <div class="card mt-5 mx-auto w-25 p-2" style="height: 350px;">
-            <p class="text-center h2"><i class="fa-solid fa-coins"> COOP LOGO</i></p>
-            <!-- <img src="" class="card-img-top" alt="Logo here"> -->
-            <div class="card-body">
-                <form action="dashboard.html" method="post" autocomplete="off">
-                    <div class="form-floating mb-3">
-                        <input type="text" name="user_name" id="user-name" class="form-control mb-2" placeholder="Username">
-                        <label for="user-name" class="form-label">Username</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="password" name="user_password" id="user-password" class="form-control mb-2" placeholder="Password">
-                        <label for="user-password" class="form-label">Password</label>
-                    </div>
-        
-                    <!-- Enable this once PHP code is applied -->
-                    <!-- <input type="submit" name="btn_login" value="Login" class="form-control mb-2 btn btn-lg btn-outline-info"> -->
-                    <a href="dashboard.html" type="button" class="form-control btn btn-outline-primary">Login</a>
-                    
-                    <div class="card-footer mt-2 border border-0 rounded">
-                        <div class="form-floating mt-2 mb-3 text-center">
-                            <a href="#" class="card-link">Create Account?</a>
-                            <a href="#" class="card-link">Forgot Password?</a>
-                        </div>
-                    </div>
-                </form>    
-                
+    <div class="container bg-light bg-gradient mt-2 fixed-top" style="height: 700px; overflow-y: scroll;">
+        <div class="row">
+            <div class="col-12">
+                <div class="container-fluid bg-dark text-white">
+                    <nav class="navbar">
+                            <a href="#" class="navbar-brand text-white">Garry Rodriguez</a>
+                            <ul class="d-flex justify-content-end mb-2">
+                                <li><a href="#">Information</a></li>
+                                <li><a href="#">News Page</a></li>
+                            </ul>
+                    </nav>    
+                </div>
             </div>
             
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="text-center list-group mt-2" style="height: 500px;">
+                    <a href="#" class="list-group-item list-group-item-action active mb-3 rounded" aria-current="true">Dashboard</a>
 
+                    <a href="#about-me" class="btn btn-outline-primary mt-1 p-3" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="about-me"><i class="fa-solid fa-user"></i> About Me</a>
+                    <a href="#skills-Abilities" class="btn btn-outline-primary mt-1 mb-1 p-3" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="skills-Abilities"><i class="fa-solid fa-bars-staggered"></i> Skills & Abilities</a>
+                    
+                    
+
+                    <a href="#computer-hardware" class="btn btn-outline-primary mt-1 p-3" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="computer-hardware"><i class="fa-solid fa-computer"></i> Computer Hardware</a>
+
+
+                    <a href="#computer-software" class="btn btn-outline-primary mt-1 p-3" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="computer-software"><i class="fa-solid fa-spinner"></i> Computer Software</a>
+
+                    <a href="#work-history" class="btn btn-outline-primary mt-1 p-3" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="work-history"><i class="fa-solid fa-clock-rotate-left"></i> Work History</a>
+                    <a href="#" class="btn btn-outline-primary mt-1 p-3"><i class="fa-solid fa-copy"></i> Blog Page</a>
+                    <br>
+                    
+                    <a href="index.html" class="btn btn-outline-dark mt-1 mb-1"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                </div> 
+            </div>
+            <div class="col-sm-4">
+                <div class="collapse mt-5" id="about-me">
+                    <div class="bg-light">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title text-center h2">Garry Rodriguez</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Professional Summary</p>
+                                <p class="card-text">A highly seasoned and reliable Computer Technician and Programmer with a strong technical background, and excellent client service record. Adept at explaining complex technical concepts and processes to clients
+                                    and non-technical staff in a clear and understandable manner. Able to multitask effectively
+                                    and bring several simultaneous installation and repair projects to completion with full accuracy and efficiency.</p>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                            <div class="card-footer">
+                                <div class="text-center h3">
+                                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a class="h5 upwork" href="https://www.upwork.com/freelancers/~010ee70d8e2e212ffb"> Upwork</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse mt-5" id="skills-Abilities">
+                    <div class="bg-light">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title text-center h2">Skill and Abilities</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Core Qualifications</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Extensive computer installation ad maintenance experience</li>
+                                    <li class="list-group-item">Strong familiarity with workstation setup and computer hardware and software applications</li>
+                                    <li class="list-group-item">Excellent proficiency in software packages of major clients</li>
+                                    <li class="list-group-item">Superior skills in repairing peripheral computer equipment such as modems, printers, and scanners</li>
+                                    <li class="list-group-item">Exceptional skills in installing and maintaining hardware and network cables</li>
+                                    <li class="list-group-item">Strong troubleshooting and analytical abilities</li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse mt-5" id="computer-hardware">
+                    <div class="bg-light">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title text-center h2">Computer Hardware</div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Troubleshoot Computer and Network Issue</li>
+                                    <li class="list-group-item">Management and Install Computer Hardware and Software and Peripherals, and configuration</li>
+                                    <li class="list-group-item">Windows Server Installation and Management</li>
+                                    <li class="list-group-item">Preventive Mainteance</li>
+                                    <li class="list-group-item">Computer Virus Removal</li>
+                                    <li class="list-group-item">Operating System Intallation</li>
+                                    <li class="list-group-item">Computer Operations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse mt-5" id="computer-software">
+                    <div class="bg-light">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title text-center h2">Computer Software</div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">PHP</li>
+                                    <li class="list-group-item">MySQL</li>
+                                    <li class="list-group-item">HTML</li>
+                                    <li class="list-group-item">CSS</li>
+                                    <li class="list-group-item">Bootstrap</li>
+                                    <li class="list-group-item">GIT, GITHUB</li>
+                                    <li class="list-group-item">Arduino</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse mt-5" id="work-history">
+                    <div class="bg-light">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title text-center h2">Work History</div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Year: June 2022 - Present</h5>
+                                <h6>Position: IT / Web Developer</h6>
+                                <p>Company: IT Tech For US Companies</p>
+                                <hr>
+                                <h5>Year: March 2020 - March 2022</h5>
+                                <h6>Position: IT Assistant</h6>
+                                <p>Company: Saudi Cataring & Contracting Co.</p>
+                                <hr>
+                                <h5>Year: February 2019 - February 2020</h5>
+                                <h6>Position: IT / Computer Technician</h6>
+                                <p>Company: CSV International Placement Agency, Inc.</p>
+                                <hr>
+                                <h5>Year: October 2017 - January 2019</h5>
+                                <h6>Position: IT / Computer Technician</h6>
+                                <p>Company: Bayawan Water District (BAWAD)</p>
+                                <hr>
+                                <h5>Year: August 2015 - July 2017</h5>
+                                <h6>Position: IT Staff / IT Intructor</h6>
+                                <p>Company: Negros Oriental State University (NORSU)</p>
+                                <hr>
+                                <h5>Year: October 2014 - December 2015</h5>
+                                <h6>Position: Computer Technician</h6>
+                                <p>Company: The Negros Chronicle / FM Bai Radio Station</p>
+                                <hr>
+                                <h5>Year: July 2010 - July 2013</h5>
+                                <h6>Position: Content Support Specialists</h6>
+                                <p>Company: SPi Global Technologies, Inc.</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
